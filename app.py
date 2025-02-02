@@ -3,7 +3,6 @@ import plotly.express as px
 import plotly.figure_factory as ff
 import numpy as np
 import pandas as pd
-import os
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -18,7 +17,6 @@ if fl is not None:
     df = pd.read_csv(filename, encoding="ISO-8859-1")
 
 else:
-    os.chdir(r"E:\materials\streamlit_projects\superstore")
     df = pd.read_csv("Superstore.csv", encoding="ISO-8859-1")
 
 
