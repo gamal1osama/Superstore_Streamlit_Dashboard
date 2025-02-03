@@ -11,43 +11,7 @@ st.set_page_config(page_title="Superstore!!!", page_icon=":bar_chart:",layout="w
 st.title(" :bar_chart: Sample SuperStore EDA")
 st.markdown('<style>div.block-container{padding-top:2rem;}</style>',unsafe_allow_html=True)
 
-fl = st.file_uploader(":file_folder: Upload a file",type=(["csv","txt","xlsx","xls"]))
-
-
-
-# Define the required columns
-REQUIRED_COLUMNS = ["Order Date", "Region", "State", "City", "Category", "Sales", "Segment", "Sub-Category", "Profit", "Quantity"]
-
-if fl is not None:
-    filename = fl.name  # Get the file name
-    file_extension = filename.split(".")[-1].lower()  # Extract file extension
-
-    try:
-        if file_extension == "csv":
-            df = pd.read_csv(fl, encoding="ISO-8859-1")
-        elif file_extension == "txt":
-            try:
-                df = pd.read_csv(fl, delimiter="\t", encoding="ISO-8859-1")
-            except Exception:
-                df = pd.read_csv(fl, delimiter=",", encoding="ISO-8859-1")
-        elif file_extension in ["xlsx", "xls"]:
-            df = pd.read_excel(fl, engine="openpyxl")
-        else:
-            st.error("❌ Unsupported file format! Please upload a CSV, TXT, or Excel file.")
-            st.stop()
-
-        # Check if all required columns exist in the uploaded file
-        missing_columns = [col for col in REQUIRED_COLUMNS if col not in df.columns]
-        if missing_columns:
-            st.error(f"❌ Missing required columns: {', '.join(missing_columns)}")
-            st.stop()
-
-
-    except Exception as e:
-        st.error(f"❌ Error reading file: {e}")
-        st.stop()
-else:
-    df = pd.read_csv("Superstore.csv", encoding="ISO-8859-1")
+df = pd.read_csv("Superstore.csv", encoding="ISO-8859-1")
 
 
 col1, col2 = st.columns((2))
