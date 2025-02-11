@@ -37,8 +37,8 @@ Here are some visuals from the dashboard:
 ### 🔧 Setup  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/your-username/sample-superstore-eda.git
-   cd sample-superstore-eda
+   git clone https://github.com/gamal1osama/Superstore_Streamlit_Dashboard.git
+   cd Superstore_Streamlit_Dashboard
    ```
 
 2. Install dependencies:  
