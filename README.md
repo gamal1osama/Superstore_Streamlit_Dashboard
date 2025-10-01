@@ -1,14 +1,14 @@
-# 📊 Sample SuperStore EDA
+# Sample SuperStore EDA
 
-## 📌 Overview  
+## Overview  
 This project is an **Exploratory Data Analysis (EDA) Dashboard** for the **Sample Superstore** dataset, built using **Streamlit** and **Plotly**. The dashboard provides interactive visualizations and insights into sales, profit, and customer behavior across different regions, categories, and time periods.
 
-🔗 **Live Demo:** [Superstore Dashboard](https://superstore-dashboard1.streamlit.app/)  
-📂 **Dataset:** [Sample Superstore Excel File](https://community.tableau.com/s/question/0D54T00000CWeX8SAL/sample-superstore-sales-excelxls)  
+**Live Demo:** [Superstore Dashboard](https://superstore-dashboard1.streamlit.app/)  
+**Dataset:** [Sample Superstore Excel File](https://community.tableau.com/s/question/0D54T00000CWeX8SAL/sample-superstore-sales-excelxls)  
 
 ---
 
-## 🖥️ Features  
+## Features  
 ✅ **Date Filtering** – Select a date range to analyze sales trends.  
 ✅ **Region, State, and City Filters** – Drill down into specific locations.  
 ✅ **Category & Segment Analysis** – View sales distribution and profit trends.  
@@ -32,7 +32,7 @@ Here are some visuals from the dashboard:
 
 ---
 
-## 📦 Installation & Usage  
+## Installation & Usage  
 
 ### 🔧 Setup  
 1. Clone the repository:  
@@ -53,8 +53,8 @@ Here are some visuals from the dashboard:
 
 ---
 
-## 🛠️ Technologies Used  
-- **Python** 🐍  
+## Technologies Used  
+- **Python**   
 - **Streamlit** – For building the interactive dashboard  
 - **Plotly** – For creating visualizations  
 - **Pandas** – For data manipulation  
